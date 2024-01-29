@@ -1,11 +1,68 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "CleanArch_CQRS.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "CleanArch_CQRS.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CleanArch_CQRS.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArch_CQRS.Application.dll": {}
+        }
+      },
+      "CleanArch_CQRS.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/CleanArch_CQRS.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArch_CQRS.Domain.dll": {}
+        }
+      },
+      "CleanArch_CQRS.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "CleanArch_CQRS.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CleanArch_CQRS.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArch_CQRS.Infrastructure.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CleanArch_CQRS.Application/1.0.0": {
+      "type": "project",
+      "path": "../CleanArch_CQRS.Application/CleanArch_CQRS.Application.csproj",
+      "msbuildProject": "../CleanArch_CQRS.Application/CleanArch_CQRS.Application.csproj"
+    },
+    "CleanArch_CQRS.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CleanArch_CQRS.Domain/CleanArch_CQRS.Domain.csproj",
+      "msbuildProject": "../CleanArch_CQRS.Domain/CleanArch_CQRS.Domain.csproj"
+    },
+    "CleanArch_CQRS.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../CleanArch_CQRS.Infrastructure/CleanArch_CQRS.Infrastructure.csproj",
+      "msbuildProject": "../CleanArch_CQRS.Infrastructure/CleanArch_CQRS.Infrastructure.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "CleanArch_CQRS.Application >= 1.0.0",
+      "CleanArch_CQRS.Domain >= 1.0.0",
+      "CleanArch_CQRS.Infrastructure >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\luanc\\.nuget\\packages\\": {}
@@ -33,7 +90,17 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\luanc\\OneDrive\\Área de Trabalho\\Estudos\\Exemplo_CQRS\\CleanArch_CQRS\\CleanArch_CQRS.Application\\CleanArch_CQRS.Application.csproj": {
+              "projectPath": "C:\\Users\\luanc\\OneDrive\\Área de Trabalho\\Estudos\\Exemplo_CQRS\\CleanArch_CQRS\\CleanArch_CQRS.Application\\CleanArch_CQRS.Application.csproj"
+            },
+            "C:\\Users\\luanc\\OneDrive\\Área de Trabalho\\Estudos\\Exemplo_CQRS\\CleanArch_CQRS\\CleanArch_CQRS.Domain\\CleanArch_CQRS.Domain.csproj": {
+              "projectPath": "C:\\Users\\luanc\\OneDrive\\Área de Trabalho\\Estudos\\Exemplo_CQRS\\CleanArch_CQRS\\CleanArch_CQRS.Domain\\CleanArch_CQRS.Domain.csproj"
+            },
+            "C:\\Users\\luanc\\OneDrive\\Área de Trabalho\\Estudos\\Exemplo_CQRS\\CleanArch_CQRS\\CleanArch_CQRS.Infrastructure\\CleanArch_CQRS.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\luanc\\OneDrive\\Área de Trabalho\\Estudos\\Exemplo_CQRS\\CleanArch_CQRS\\CleanArch_CQRS.Infrastructure\\CleanArch_CQRS.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

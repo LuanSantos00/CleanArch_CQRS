@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7JWA5Ekctfcs8RzSASnJ9nxBbpRI4U7zFwIiDnTmgUlfvIdHOR3xYjnkraaeZKEAqZ6iyzRhMtPfC/7xYzLTGQ==",
+  "dgSpecHash": "OmPqHm9wbPvvYpa6hSQGh7cFmWZB1er++OV1n/GD7F5ysoydsEG9p86EMFPkA7xbrr4T9JQ9n76AutyUk4wdAw==",
   "success": true,
   "projectFilePath": "C:\\Users\\luanc\\OneDrive\\Área de Trabalho\\Estudos\\Exemplo_CQRS\\CleanArch_CQRS\\CleanArch_CQRS.Infrastructure\\CleanArch_CQRS.Infrastructure.csproj",
   "expectedPackageFiles": [],
